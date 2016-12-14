@@ -1,0 +1,146 @@
+INSTALL
+Created Thu Jan 24 07:45:44 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Installation of Wine (Wine Is Not an Emulator) on debian
+
+
+Wine - Wine Is Not an Emulator
+
+
+Install
+=======
+Installation of Wine on GCI covellite debian wheezy 7.4
+
+covellite:~# aptitude install wine
+The following NEW packages will be installed:
+  wine wine64-bin{a} 
+0 packages upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 107 kB of archives. After unpacking 167 kB will be used.
+Do you want to continue? [Y/n/?] Y
+Get: 1 http://ftp.us.debian.org/debian/ wheezy/main wine64-bin amd64 1.4.1-4 [52.7 kB]
+Get: 2 http://ftp.us.debian.org/debian/ wheezy/main wine amd64 1.4.1-4 [54.0 kB]
+Fetched 107 kB in 0s (138 kB/s) 
+Selecting previously unselected package wine64-bin.
+(Reading database ... 252752 files and directories currently installed.)
+Unpacking wine64-bin (from .../wine64-bin_1.4.1-4_amd64.deb) ...
+Selecting previously unselected package wine.
+Unpacking wine (from .../wine_1.4.1-4_amd64.deb) ...
+Setting up wine64-bin (1.4.1-4) ...
+Setting up wine (1.4.1-4) ...
+
+covellite:~#
+
+covellite:~# aptitude install wine-doc
+The following NEW packages will be installed:
+  wine-doc 
+0 packages upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 459 kB of archives. After unpacking 1,552 kB will be used.
+Get: 1 http://ftp.us.debian.org/debian/ wheezy/main wine-doc all 1.0.0-1 [459 kB]
+Fetched 459 kB in 1s (358 kB/s)   
+Selecting previously unselected package wine-doc.
+(Reading database ... 252761 files and directories currently installed.)
+Unpacking wine-doc (from .../wine-doc_1.0.0-1_all.deb) ...
+Processing triggers for doc-base ...
+Processing 3 added doc-base files...
+Registering documents with scrollkeeper...
+Setting up wine-doc (1.0.0-1) ...
+
+covellite:~#
+
+
+Installation of Wine on malachite debian squeeze amd64 6.0.6.
+
+wine - Windows API implementation - standard suite
+
+# aptitude install wine
+The following NEW packages will be installed:
+  libwine{a} libwine-alsa{a} libwine-cms{a} libwine-gl{a} libwine-gphoto2{a} libwine-ldap{a} 
+  libwine-print{a} libwine-sane{a} wine wine-bin{a} wine-utils{a} 
+0 packages upgraded, 11 newly installed, 0 to remove and 0 not upgraded.
+Need to get 11.0 MB of archives. After unpacking 53.0 MB will be used.
+Do you want to continue? [Y/n/?] Y
+Get:1 http://ftp.us.debian.org/debian/ squeeze/main libwine amd64 1.0.1-3.1 [8,777 kB]
+Get:2 http://ftp.us.debian.org/debian/ squeeze/main libwine-alsa amd64 1.0.1-3.1 [102 kB]           
+Get:3 http://ftp.us.debian.org/debian/ squeeze/main libwine-cms amd64 1.0.1-3.1 [60.8 kB]           
+Get:4 http://ftp.us.debian.org/debian/ squeeze/main libwine-gl amd64 1.0.1-3.1 [385 kB]             
+Get:5 http://ftp.us.debian.org/debian/ squeeze/main libwine-gphoto2 amd64 1.0.1-3.1 [62.3 kB]       
+Get:6 http://ftp.us.debian.org/debian/ squeeze/main libwine-ldap amd64 1.0.1-3.1 [106 kB]           
+Get:7 http://ftp.us.debian.org/debian/ squeeze/main libwine-print amd64 1.0.1-3.1 [158 kB]          
+Get:8 http://ftp.us.debian.org/debian/ squeeze/main libwine-sane amd64 1.0.1-3.1 [59.8 kB]          
+Get:9 http://ftp.us.debian.org/debian/ squeeze/main wine-bin amd64 1.0.1-3.1 [708 kB]               
+Get:10 http://ftp.us.debian.org/debian/ squeeze/main wine-utils amd64 1.0.1-3.1 [572 kB]            
+Get:11 http://ftp.us.debian.org/debian/ squeeze/main wine amd64 1.0.1-3.1 [44.0 kB]                 
+Fetched 11.0 MB in 14s (781 kB/s)                                                                   
+Selecting previously deselected package libwine.
+...
+Setting up libwine (1.0.1-3.1) ...
+Setting up libwine-alsa (1.0.1-3.1) ...
+Setting up libwine-cms (1.0.1-3.1) ...
+Setting up libwine-gl (1.0.1-3.1) ...
+Setting up libwine-gphoto2 (1.0.1-3.1) ...
+Setting up libwine-ldap (1.0.1-3.1) ...
+Setting up libwine-print (1.0.1-3.1) ...
+Setting up libwine-sane (1.0.1-3.1) ...
+Setting up wine-bin (1.0.1-3.1) ...
+Setting up wine-utils (1.0.1-3.1) ...
+Setting up wine (1.0.1-3.1) ...
+
+#
+
+$ type wine
+wine is /usr/bin/wine
+$
+
+
+Test
+====
+Testing by running Comskip a free windows mpeg commercial detector. 
+$ wine /usr/local/comskip/comskip
+Could not load Mozilla. HTML rendering will be disabled.
+X Error of failed request:  BadWindow (invalid Window parameter)
+  Major opcode of failed request:  137 (NV-GLX)
+  Minor opcode of failed request:  4 ()
+  Resource id in failed request:  0x1fc
+  Serial number of failed request:  2924
+  Current serial number in output stream:  2924
+
+^Cerr:seh:raise_exception Unhandled exception code c000013a flags 0 addr 0xf771542
+$
+
+Got quick Wine Warning window:
+It appears that libnss-mdns is installed on your system,
+but lib32nss-mdns is not.  Please note that Wine will not
+able to access the Internet unless you either install 
+lib32nss-mdns (or ia32-libss-mdns), or uninstall libnss-mdns.
+
+Install the lib32nss-mdns package:
+# aptitude install lib32nss-mdns
+...
+Unpacking lib32nss-mdns (from .../lib32nss-mdns_0.10-3.1_amd64.deb) ...
+Setting up lib32nss-mdns (0.10-3.1) ...
+#
+
+Try comskip test again:
+$ wine /usr/local/comskip/comskip
+
+Usage:
+  comskip  [-h|--help] [-w|--debugwindow] [-n|--playnice] [--zpcut] [--zpchapter] [--videoredo] \
+    [--csvout] [--quality] [--plist] [-m|--demux] [-p|--pid=<string>] [-t|--ts] \
+    [-d|--detectmethod=<int>] [-v|--verbose=<int>] [-u|--dump=<int>] [-s|--play] [--timing] \
+    [-q|--quiet] [--ini=<file>] [--logo=<file>] [--cut=<file>] [--output=<file>] \
+    [--selftest=<int>] <file> [<file>]
+...
+Errors:
+ComSkip: missing option <file>
+$
+
+Yeh hah! Works as described.
+
+
+Links
+=====
+Wine (software)
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Wine_%28software%29
