@@ -1,0 +1,59 @@
+wine.txt
+Created Thu Jan 24 07:57:55 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Wine - Wine Is Not an Emulator
+
+
+Wine is a free and open source software application that aims to allow
+applications designed for Microsoft Windows to run on Unix-like operating systems.
+Wine also provides a software library, known as Winelib, against which developers
+can compile Windows applications to help port them to Unix-like systems.[2]
+
+Wine is a compatibility layer.  It duplicates functions of Windows by providing
+alternative implementations of the DLLs that Windows programs call,[3] and a
+process to substitute for the Windows NT kernel.  This method of duplication
+differs from other methods that might also be considered emulation, where Windows
+programs run in a virtual machine.[4]  Wine is predominantly written using
+black-box testing reverse-engineering, to avoid copyright issues.[5]
+
+The name Wine initially was an acronym for WINdows Emulator.[6]  Its meaning later
+shifted to the recursive backronym, Wine Is Not an Emulator in order to
+differentiate the software from other emulators.[7]  While the name sometimes
+appears in the forms WINE and wine, the project developers have agreed to
+standardize on the form Wine.[8]
+
+wikipedia.org/
+
+
+Links
+=====
+[1] "WineHQ - Wine Announcement". Retrieved 2012-06-16.
+http://www.winehq.org/announce/1.4.1
+
+[2] "Winelib". Wine HQ. Retrieved 29 June 2008.
+http://wiki.winehq.org/Winelib
+
+[3] "Wine architecture". Wine HQ. Retrieved 16 June 2012.
+http://www.winehq.org/docs/winedev-guide/x2540
+
+[4] "Is Wine an emulator? There seems to be disagreement."
+http://wiki.winehq.org/FAQ#head-c9e6502ad636315e905d07f7e44594757a6738e3
+
+[5] Mckenzie, James (26 December 2009). "Legal Issues". WineHQ Forums.
+http://forum.winehq.org/viewtopic.php?p=37364#37364
+
+[6] WINE FAQ Old meaning of the name even used until 1997
+http://www.faqs.org/faqs/windows-emulation/wine-faq
+
+[7] Wine Is Not an Emulator First proposal to change the meaning of the name WINE
+http://groups.google.com/group/comp.os.linux.misc/msg/eb77fac360ad4a52?dmode=source
+
+[8] "Why do some people write WINE and not Wine?". Wine Wiki FAQ. Official Wine Wiki. 7 July 2008.
+Retrieved 13 July 2008.
+http://wiki.winehq.org/FAQ?action=recall&rev=217#head-8b4fbbe473bd0d51d936bcf298f5b7f0e8d25f2e
+
+Wine (software)
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Wine_%28software%29
