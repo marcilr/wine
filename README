@@ -1,0 +1,26 @@
+README
+Created Tue Dec 13 15:23:50 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+INSTALL
+  Installation of Wine (Wine Is Not an Emulator) on debian
+
+links.txt
+  Wine related links
+
+packages.txt
+  Wine packages on debian wheezy 7.4 amd64
+
+wine.txt
+  Wine - Wine Is Not an Emulator
+
+  Wine is a free and open source software application that aims to allow
+  applications designed for Microsoft Windows to run on Unix-like operating systems.
+  Wine also provides a software library, known as Winelib, against which developers
+  can compile Windows applications to help port them to Unix-like systems.   
+  --"Winelib". Wine HQ. Retrieved 29 June 2008.
+    http://wiki.winehq.org/Winelib
+
