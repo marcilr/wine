@@ -1,0 +1,18 @@
+links.txt
+Created Thu Jan 24 08:02:40 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Wine related links
+
+
+Links
+=====
+Installing Microsoft Office 2010 in Wine - Ubuntu 12.04/12.10 64-bit/32-bit
+Looks practical.
+http://craigacgomez.blogspot.com/2012/09/installing-microsoft-office-2010-in.html
+
+Wine (software)
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/Wine_%28software%29
+
