@@ -1,0 +1,12 @@
+packages.txt
+Created Wed Mar 12 11:25:22 AKDT 2014
+Copyright (C) 2014 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Wine packages on debian wheezy 7.4 amd64
+
+wine - Windows API implementation - standard suite
+wine64-bin - Windows API implementation - binary loader
+wine-doc - Windows API implementation - documentation
+libwine-gecko-1.4 - Windows API implementation - web browser module
+libwine-gecko-dbg-1.4 - Windows API implementation - web browser debug build
